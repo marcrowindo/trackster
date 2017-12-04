@@ -36,7 +36,7 @@ $(document).ready(function(){
 			    '</div>' +
 
 			    '<div class="popularity col-xs-2">' +
-			      '<span>' + tracks[i].listeners + '</span>' +
+			      '<span>' + numeral(tracks[i].listeners).format('0,0') + '</span>' +
 			    '</div>' +
 			    
 			  '</div>';
