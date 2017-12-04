@@ -1,3 +1,86 @@
-/*
-  Custom styles for Trackster App
-*/
+
+/*div {
+	border: 1px solid black;
+}*/
+
+/*********** UNIVERSAL STYLES ***********/
+
+html {
+	font-size: 16px;
+	line-height: 1.4;
+	font-family: Work+Sans;
+	color: rgb(74, 74, 74);
+}
+
+.logo span {
+	font-family: Righteous;
+	font-size: 2.5rem;
+	color: rgb(255, 102, 204);
+}
+
+
+/*********** HEADER ***********/
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 8rem;
+	background-color: rgb(35, 2, 63);
+}
+
+.btn {
+	border-radius: 19px;
+	background-color: rgb(255, 102, 204);
+	border: 1px solid rgb(35, 2, 63);
+}
+
+.btn .fa {
+	color: rgb(35, 2, 63);
+}
+
+.btn:hover {
+	background-color: rgb(255, 0, 717);
+	border: 1px solid rgb(35, 2, 63);
+}
+
+input {
+	border-radius: 19px;
+	height: 2.8rem;
+	background-color: rgb(255, 255, 255);
+}
+
+/*********** TOP BAR ***********/
+
+.top-bar {
+	display: flex;
+	background-color: rgb(104, 0, 255);
+	height: 2rem;
+	align-items: center;
+}
+
+.attribute {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+/*********** Song Display ***********/
+
+.results {
+	padding: 0;
+}
+
+.result {
+	display: flex;
+	align-items: center;
+	padding: 0.6rem 0;
+	border-bottom: 1px solid #cccccc;
+}
+
+.result .fa {
+	color: rgb(255, 102, 204);
+}
+
+
+
