@@ -52,7 +52,7 @@ $(document).ready(function(){
 
  	Trackster.searchTracksByTitle = function(title) {
  		console.log(title);
-		var requestURL = 'http://ws.audioscrobbler.com/2.0/?method=track.search&track=' + title + '&api_key=' + API_KEY + '&format=json';
+		var requestURL = 'https://ws.audioscrobbler.com/2.0/?method=track.search&track=' + title + '&api_key=' + API_KEY + '&format=json';
 		$.ajax( {url:requestURL, success: function(result) { 
 			console.log(result);
 			Trackster.renderTracks(result.results.trackmatches.track);
