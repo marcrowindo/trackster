@@ -18,6 +18,16 @@ html {
 	color: rgb(255, 102, 204);
 }
 
+.header,
+.top-bar {
+	position: fixed;
+	z-index: 5;
+}
+
+.top-bar {
+	top: 8rem;
+	width: 100%;
+}
 
 /*********** HEADER ***********/
 
@@ -33,7 +43,7 @@ html {
 .btn {
 	border-radius: 19px;
 	background-color: rgb(255, 102, 204);
-	border: 1px solid rgb(35, 2, 63);
+	border: 1px solid rgb(255, 102, 204);
 }
 
 .btn .fa {
@@ -41,14 +51,31 @@ html {
 }
 
 .btn:hover {
-	background-color: rgb(255, 0, 717);
-	border: 1px solid rgb(35, 2, 63);
+	background-color: rgb(255, 102, 204);
+	box-shadow: 0 0 1rem white;
+	transition: box-shadow 0.3s ease-out;
+	border: 1px solid rgb(255, 102, 204);
+}
+
+.btn:hover:active {
+	background-color: rgb(255, 102, 204);
+	box-shadow: 0 0 1rem rgb(255, 102, 204);
 }
 
 input {
 	border-radius: 19px;
 	height: 2.8rem;
 	background-color: rgb(255, 255, 255);
+}
+
+input:hover {
+		box-shadow: 0 0 1rem white;
+		transition: box-shadow 0.3s ease-out;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: 0 0 1rem rgb(255, 102, 204);
 }
 
 /*********** TOP BAR ***********/
@@ -69,6 +96,7 @@ input {
 
 .results {
 	padding: 0;
+	padding-top: 10rem;
 }
 
 .result {
